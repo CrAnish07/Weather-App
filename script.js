@@ -17,7 +17,7 @@ button.addEventListener("click", async () => {
     const value = input.value;
     const result = await getData(value);
 
-    cityName.innerText = `${result.location.name}, ${result.location.country}`;
+    cityName.innerText = `${result.location.name}, ${result.location.region}, ${result.location.country}`;
 
     cityTemp.innerText = `${result.current.temp_c}`;
 
