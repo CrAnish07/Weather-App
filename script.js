@@ -8,7 +8,7 @@ const cityHumidity = document.getElementById("city-humidity");
 const cityWind = document.getElementById("city-wind");
 
 async function getData(cityName) {
-    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=c72b0cf5b8784bef8f5190818230812&q=${cityName}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=<YOUR API KEY>&q=${cityName}&aqi=yes`);
     
     return await promise.json();
 }
